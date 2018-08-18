@@ -34,6 +34,7 @@ ol {
   top: 0;
   left: 0;
   background-color: #222D32;
+  transition: left 1s;
 }
 .lt-aside .title {
   height: 50px;
@@ -77,11 +78,15 @@ ol {
 .lt-aside .nav ol a {
   padding-left: 60px;
 }
+.lt-aside.hidemenu {
+  left: -180px;
+}
 .lt-body {
   width: 100%;
   height: 1000px;
   padding-left: 180px;
   padding-top: 50px;
+  transition: padding-left 1s;
 }
 .lt-body .lt-topbar {
   width: 100%;
@@ -91,6 +96,7 @@ ol {
   top: 0;
   left: 0;
   background-color: #3C8DBC;
+  transition: padding-left 1s;
 }
 .lt-body .lt-topbar a {
   display: block;
@@ -100,4 +106,13 @@ ol {
   text-align: center;
   color: #fff;
   font-size: 20px;
+}
+.lt-body .lt-topbar.hidemenu {
+  padding-left: 0;
+}
+.lt-body.hidemenu {
+  padding-left: 0;
+}
+#logoutModal .modal-body {
+  color: #A94442;
 }
