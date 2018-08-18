@@ -6,6 +6,7 @@ $(function () {
   })
   // 在AJAX 请求完成时执行一个处理函数。
   $(document).ajaxStop(function () {
+    // NProgress.done();
     setTimeout(function () {
       NProgress.done()
     }, 2000)
