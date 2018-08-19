@@ -136,7 +136,7 @@
   <script type="text/html" id="userTpl">
     {{ each rows v i }}
       <tr>
-        <td>{{ i + (page - 1)*size }}</td>
+        <td>{{ i + 1 + (page - 1)*size }}</td>
         <td>{{ v.username }}</td>
         <td>{{ v.mobile }}</td>
         <td>{{ v.isDelete == 1 ? '正常' : '禁用' }}</td>
