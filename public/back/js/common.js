@@ -6,16 +6,16 @@ $(function () {
   })
   // 在AJAX 请求完成时执行一个处理函数。
   $(document).ajaxStop(function () {
-    // NProgress.done();
-    setTimeout(function () {
-      NProgress.done()
-    }, 2000)
+    NProgress.done();
+    // setTimeout(function () {
+    //   NProgress.done()
+    // }, 2000)
   })
 })
 
 // 判断是否登陆
 $(function () {
-  console.log(location.href.indexOf('login.html'));
+  // console.log(location.href.indexOf('login.html'));
 
   if (location.href.indexOf('login.html') === -1) {
     $.ajax({

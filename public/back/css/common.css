@@ -112,6 +112,11 @@ ol {
 .lt-body .lt-topbar.hidemenu {
   padding-left: 0;
 }
+.lt-body .lt_content table th,
+.lt-body .lt_content table td {
+  text-align: center;
+  vertical-align: middle;
+}
 .lt-body.hidemenu {
   padding-left: 0;
 }
@@ -120,6 +125,6 @@ ol {
   width: 48%;
   height: 400px;
 }
-#logoutModal .modal-body {
+.red {
   color: #A94442;
 }
