@@ -120,7 +120,7 @@
       <td>{{ v.categoryName }}</td>
       <td>{{ v.brandName }}</td>
       <td>
-        <img src="{{ v.brandLogo }}" width='100'>
+        <img src="{{ v.brandLogo }}">
       </td>
     </tr>
     {{ /each}}
@@ -151,6 +151,7 @@
                 </ul>
               </div>
               <input type="hidden" name="categoryId">
+              <input type="hidden" name="hot" value="1">
             </div>
             
             <div class="form-group">
@@ -183,7 +184,7 @@
   <script type="text/html" id="firstTpl">
     {{ each rows v i }}
       <li role="presentation">
-        <a role="menuitem" tabindex="-1" href="#">{{ v.categoryName }}</a>
+        <a role="menuitem" tabindex="-1" href="#" data-id='{{ v.id }}'>{{ v.categoryName }}</a>
       </li>
     {{ /each}}
   </script>

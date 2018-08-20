@@ -117,6 +117,9 @@ ol {
   text-align: center;
   vertical-align: middle;
 }
+.lt-body .lt_content table tbody img {
+  height: 50px;
+}
 .lt-body.hidemenu {
   padding-left: 0;
 }
@@ -127,9 +130,6 @@ ol {
 }
 .red {
   color: #A94442;
-}
-.modal-body input {
-  width: 100%;
 }
 #imgBox img {
   width: 100px;

@@ -147,6 +147,8 @@
 
         <form id="form">
           <div class="modal-body">
+
+            <!-- 二级分类 -->
             <div class="form-group">
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -157,36 +159,71 @@
                   <!--  -->
                 </ul>
               </div>
-              <input type="hidden" name="categoryId">
+              <input type="hidden" name="brandId">
             </div>
+
+            <!-- 商品名称 -->
             <div class="form-group">
               <input type="text" class="form-control" name="proName" placeholder="请输入商品名称">
             </div>
+
+            <!-- 商品描述 -->
             <div class="form-group">
               <textarea class="form-control" name="proDesc" placeholder="请输入商品描述"></textarea>
             </div>
+
+            <!-- 商品库存 -->
             <div class="form-group">
-                <input type="text" class="form-control" name="num" placeholder="请输入商品库存">
+              <input type="text" class="form-control" name="num" placeholder="请输入商品库存">
             </div>
-            <div class="form-group"><input type="text" class="form-control" name="size" placeholder="请输入商品尺码"></div>
-            <div class="form-group"><input type="text" class="form-control" name="oldPrice" placeholder="请输入商品原价"></div>
-            <div class="form-group"><input type="text" class="form-control" name="price" placeholder="请输入商品现价"></div>
+
+            <!-- 商品尺寸 -->
+            <div class="form-group">
+              <input type="text" class="form-control" name="size" placeholder="请输入商品尺码">
+            </div>
+
+            <!-- 商品原价 -->
+            <div class="form-group">
+              <input type="text" class="form-control" name="oldPrice" placeholder="请输入商品原价">
+            </div>
+
+            <!-- 商品价格 -->
+            <div class="form-group">
+              <input type="text" class="form-control" name="price" placeholder="请输入商品现价">
+            </div>
+
+            <!-- 上传图片按钮 -->
             <div class="form-group">
               <label for="fileupload" class='btn btn-default'>上传图片</label>
               <input type="file" name="pic1" id="fileupload" data-url="/product/addProductPic" multiple style="display: none">
             </div>
-            <div class="form-group" id="imgBox">
 
+            <!-- 上传的图片显示曲 -->
+            <div class="form-group" id="imgBox">
+              <input type="hidden" name="picStatus">
             </div>
+
           </div>
+
+
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
             <button type="submit" class="btn btn-primary">添加</button>
           </div>
+
         </form>
       </div>
     </div>
   </div>
+
+  <!-- 二级分类列表 -->
+  <script type="text/html" id="dropTpl">
+    {{ each rows v i }}
+    <li>
+      <a href="#" data-id='{{ v.id }}'>{{ v.brandName }}</a>
+    </li>
+    {{ /each}}
+  </script>
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
