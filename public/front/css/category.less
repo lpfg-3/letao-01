@@ -1,0 +1,49 @@
+
+  // 左侧一级分类滚动区域
+  .lt-content-left{
+    position: relative;
+    float: left;
+    width: 90px;
+    height: 100%;
+    li{
+      a{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #666;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #E3E4E5;
+      }
+      a.current{
+        background-color: #fff;
+        border-right: none;
+      }
+    }
+  }
+
+  // 右侧二级分类滚动区域
+  .lt-content-right{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    li{
+      float: left;
+      width: 33.33%;
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        img{
+          display: block;
+          margin: 0 auto;
+          width: 70px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+

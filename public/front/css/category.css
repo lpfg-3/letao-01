@@ -1,0 +1,40 @@
+.lt-content-left {
+  position: relative;
+  float: left;
+  width: 90px;
+  height: 100%;
+}
+.lt-content-left li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #666;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #E3E4E5;
+}
+.lt-content-left li a.current {
+  background-color: #fff;
+  border-right: none;
+}
+.lt-content-right {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.lt-content-right li {
+  float: left;
+  width: 33.33%;
+}
+.lt-content-right li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.lt-content-right li a img {
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 50px;
+}
