@@ -1,6 +1,11 @@
-.btn-edit,
-.btn-del {
-  height: 110px;
+.mui-scroll {
+  height: 90px;
+  line-height: 90px;
+}
+.mui-scroll .btn-edit,
+.mui-scroll .btn-del {
+  font-size: 30px;
+  padding: 30px;
 }
 .product-item {
   width: 100%;

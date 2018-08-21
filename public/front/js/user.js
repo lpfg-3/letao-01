@@ -8,6 +8,7 @@ $(function () {
       console.log(info);
       if (info.error === 400) {
         location.href = 'login.html';
+        return;
       }
       var htmlStr = template('tpl', info);
       $('#userInfo').html( htmlStr );
