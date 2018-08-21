@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="lib/mui/css/mui.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/user.css">
+  <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <a href="javascript:history.go(-1);" class="icon-left">
         <i class="mui-icon mui-icon-back"></i>
       </a>
-      <h3>会员中心</h3>
+      <h3>购物车</h3>
     </div>
 
     <!-- 主体 -->
@@ -32,24 +32,55 @@
 
           <!-- mui 列表  右侧添加导航箭头-->
           <ul class="mui-table-view">
-            <li class="mui-table-view-cell">
-              <a class="mui-navigate-right" id="userInfo">
-                <!-- 用户信息占位 -->
-              </a>
-            </li>
-            <li class="mui-table-view-cell">
-              <a class="mui-navigate-right">账号与安全</a>
-            </li>
-            <li class="mui-table-view-cell">
-              <a class="mui-navigate-right">我的购物车</a>
-            </li>
-            <li class="mui-table-view-cell">
-              <a class="mui-navigate-right">收货地址管理</a>
+            <li class="mui-table-view-cell product-item">
+
+              <!-- 侧滑导航根容器 -->
+              <div class="mui-off-canvas-wrap mui-draggable">
+                <!-- 主页面容器 -->
+                <div class="mui-inner-wrap">
+                  <!-- 菜单容器 -->
+                  <aside class="mui-off-canvas-right">
+                    <div class="mui-scroll-wrapper">
+                      <div class="mui-scroll">
+                        <!-- 菜单具体展示内容 -->
+                        <a href="#" class="mui-btn mui-btn-primary mui-icon mui-icon-compose btn-edit"></a>
+                        <a href="#" class="mui-btn mui-btn-danger mui-icon mui-icon-compose btn-del"></a>
+                      </div>
+                    </div>
+                  </aside>
+
+                  <!-- 主页面内容容器 -->
+                  <div class="mui-content mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                      <!-- 主界面具体展示内容 -->
+
+                      <div class="cart-img">
+                        <img src="images/product.jpg">
+                        <input type="checkbox">
+                      </div>
+                      <div class="cart-info">
+                        <p class="info mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                        <p>
+                          <span class="price">¥560</span>
+                          <span class="oldPrice">¥580</span>
+                          <span class="num mui-pull-right">1双</span>
+                        </p>
+                        <p>鞋码:50</p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+
             </li>
           </ul>
-          <div class="btn-wrapper">
-            <button type="button" class="mui-btn mui-btn-block" id="logout">退出</button>
-          </div>
+
 
 
         </div>
@@ -72,13 +103,13 @@
           </a>
         </li>
         <li>
-          <a href="cart.html">
+          <a href="cart.html" class="current">
             <i class="fa fa-shopping-cart"></i>
             <p>购物车</p>
           </a>
         </li>
         <li>
-          <a href="user.html" class="current">
+          <a href="user.html">
             <i class="fa fa-user"></i>
             <p>用户中心</p>
           </a>
@@ -104,8 +135,8 @@
   <script src="lib/mui/js/mui.js"></script>
   <script src="lib/zepto/zepto.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
-  <script src="js/user.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>
