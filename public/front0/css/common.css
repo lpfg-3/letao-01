@@ -84,10 +84,10 @@ body {
   color: #fff;
 }
 .lt-container .lt-footer li a.current {
-  color: origin;
+  color: orange;
 }
 .lt-container .lt-footer li a.current p {
-  color: origin;
+  color: orange;
 }
 .lt-container .lt-content {
   width: 100%;

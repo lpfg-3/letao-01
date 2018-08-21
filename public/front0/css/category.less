@@ -1,0 +1,48 @@
+
+// 左侧 一级分类 显示区
+.lt-left{
+  position: relative;
+  width: 90px;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    a{
+      width: 100%;
+      height: 100%;
+      background-color: #E3E4E5;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      color: #666;
+    }
+    a.current{
+      background-color: #fff;
+      border-left: none;
+    }
+  }
+}
+
+.lt-right{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  
+  li{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    a{
+      width: 100%;
+      height: 100%;
+      img{
+        width: 75px;
+        height: 50px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
