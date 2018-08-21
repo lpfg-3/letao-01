@@ -29,27 +29,25 @@
       <ul class="mui-table-view">
         <!-- mui图文列表 -->
         <li class="mui-table-view-cell mui-media">
-          <a href="javascript:;">
-            <img class="mui-media-object mui-pull-left" src="images/user.jpg">
-            <div class="mui-media-body">
-              itcast
-              <p class='mui-ellipsis'>绑定手机: 15102324243</p>
-            </div>
+          <a href="javascript:;" id="info">
+            <!-- 用户信息模板占位 -->
           </a>
         </li>
         <!-- 普通列表 右侧添加导航箭头 -->
         <li class="mui-table-view-cell">
-            <a class="mui-navigate-right">账号与安全</a>
+          <a class="mui-navigate-right">账号与安全</a>
         </li>
         <li class="mui-table-view-cell">
-            <a class="mui-navigate-right">我的购物车</a>
+          <a class="mui-navigate-right">我的购物车</a>
         </li>
         <li class="mui-table-view-cell">
-            <a class="mui-navigate-right">收获地址管理</a>
+          <a class="mui-navigate-right">收获地址管理</a>
         </li>
       </ul>
       <!-- 退出按钮 -->
-      <div class="btn-box"><button class='mui-btn mui-btn-block' id="logout" width='100%'>退出</button></div> 
+      <div class="btn-box">
+        <button class='mui-btn mui-btn-block' id="logout" width='100%'>退出</button>
+      </div>
     </div>
 
     <!-- 底部 -->
@@ -87,6 +85,16 @@
     </div>
 
   </div>
+
+  <!-- 用户信息模板 -->
+  <script type="text/html" id="userTpl">
+    <img class="mui-media-object mui-pull-left" src="images/user.jpg">
+    <div class="mui-media-body">
+      {{ username }}
+      <p class='mui-ellipsis'>绑定手机: {{ mobile }}</p>
+    </div>
+
+  </script>
 
   <script src="lib/zepto/zepto.min.js"></script>
   <script src="lib/mui/js/mui.js"></script>
